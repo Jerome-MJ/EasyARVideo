@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#68000000"
+        >
+
+        <ImageView
+            android:id="@+id/iv_video_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:onClick="play"
+            android:tag="pause"
+            android:src="@mipmap/iconfont_video_pause"/>
+
+        <ImageView
+            android:id="@+id/iv_video_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:onClick="restart"
+            android:src="@mipmap/iconfont_video_restart"/>
+        
+        <SeekBar
+            android:id="@+id/sk_video_seekbar"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/iv_video_play"
+            android:layout_toLeftOf="@id/iv_video_restart"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:progressDrawable="@drawable/player_setting_bright_progressbar"
+            android:thumb="@drawable/player_settings_bright_thumb"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/tv_video_current"
+            android:layout_width="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#dadada"
+            android:layout_marginTop="-10dp"
+            android:layout_alignRight="@id/sk_video_seekbar"
+            android:layout_below="@id/sk_video_seekbar"
+            android:text="00:24／09:01"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
