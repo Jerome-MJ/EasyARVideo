@@ -1,5 +1,8 @@
 # EasyARVideo
-关于EasyAR本地Android项目，增加了seekbar的操作显示，以及暂停开始，等操作。大家有什么更多地建议也可以提
+ios的小伙伴也可以参考修改，基本都是修改那几个文件，增加几个方法，然后实现调用而已，已成功帮一个ios小伙伴搞定。  
+
+关于EasyAR本地Android项目，增加了seekbar的操作显示，以及暂停开始，等操作。大家有什么更多地建议也可以提。
+
 # 效果如下
 --
 ![image](https://github.com/Jerome-MJ/EasyARVideo/raw/master/screenshots/s2.jpg)
