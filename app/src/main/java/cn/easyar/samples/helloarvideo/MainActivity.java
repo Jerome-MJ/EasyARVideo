@@ -115,7 +115,7 @@ public class MainActivity extends ActionBarActivity {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 				if (fromUser) {
-					mVideoCurrentTextView.setText(getTime(progress()) + ":" + getTime(nativeGetDuration()));
+					mVideoCurrentTextView.setText(getTime(progress) + ":" + getTime(nativeGetDuration()));
 					nativeVideoSeek(progress);
 				}
 			}
@@ -151,7 +151,7 @@ public class MainActivity extends ActionBarActivity {
 
 	public void play(View v) {
 		//播放
-		if("play".equals(v.getTag()){
+		if("play".equals(v.getTag())){
 			//当前是播放状态
 			nativeVideoPause();
 			mVideoPlayImageView.setTag("pause");
